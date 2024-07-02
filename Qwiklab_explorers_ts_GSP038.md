@@ -11,8 +11,8 @@ gcloud beta compute ssh  linux-instance
 ### Press Y Enter > Enter > Enter > Press N Enter
 ```cmd
 gcloud services enable apikeys.googleapis.com
-gcloud alpha services api-keys create --display-name="CloudHustlers" 
-KEY_NAME=$(gcloud alpha services api-keys list --format="value(name)" --filter "displayName=CloudHustlers")
+gcloud alpha services api-keys create --display-name="Qwiklab_Explorers_TS" 
+KEY_NAME=$(gcloud alpha services api-keys list --format="value(name)" --filter "displayName=Qwiklab_Explorers_TS")
 API_KEY=$(gcloud alpha services api-keys get-key-string $KEY_NAME --format="value(keyString)")
 echo $API_KEY
 touch request.json
